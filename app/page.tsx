@@ -13,16 +13,6 @@ export default function Page() {
 
   return (
       <div className="flex flex-col min-h-[100dvh]">
-        <header className="flex justify-center">
-          <div className="px-4 max-lg:px-6 h-14 flex items-center max-[1372px]:min-w-full min-[1372px]:min-w-[1372px]">
-            <Link href="#" className="flex items-center justify-center" prefetch={false}>
-              <CreditCardIcon className="h-6 w-6" />
-              <span className="sr-only">Biz Card</span>
-              <span className={`ml-2 text-lg font-semibold ${kanit.className}`}>BizBase</span>
-            </Link>
-            <Navigation />
-          </div>
-        </header>
         <main className="flex-1">
           <section className="w-full py-12 md:py-24 lg:py-32">
             <div className="container px-4 md:px-6">
@@ -78,48 +68,58 @@ export default function Page() {
                   <h2 className={`text-3xl font-bold tracking-tight sm:text-5xl ${kanit.className}`}>
                     Organize and Secure Your Business Cards
                   </h2>
-                  <p className="max-w-[600px] xl:max-w-[800px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                    Our cloud-based platform helps you store, share, and manage your business cards with ease. Access
-                    your
-                    contacts from anywhere, anytime.
-                  </p>
+                  <div className="w-full flex justify-center">
+                    <p className="max-w-[600px] xl:max-w-[800px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                      Our cloud-based platform helps you store, share, and manage your business cards with ease. Access
+                      your
+                      contacts from anywhere, anytime.
+                    </p>
+                  </div>
                 </div>
               </div>
               <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12">
                 <div className="flex flex-col justify-center space-y-4">
                   <ul className="grid gap-6">
                     <li>
-                      <div className="grid gap-1">
-                        <h3 className={`text-2xl font-bold ${kanit.className}`}>Fast AI image parsing</h3>
-                        <p className="text-muted-foreground">
-                          Take a picture of you business card and the data is ready for storage.
-                          No additional steps required.
-                        </p>
-                      </div>
+                      <Card className="p-4">
+                        <div className="grid gap-1">
+                          <h3 className={`text-2xl font-bold ${kanit.className}`}>Fast AI image parsing</h3>
+                          <p className="text-muted-foreground text-sm">
+                            Take a picture of your business card and the data is ready for storage.
+                            No additional steps required.
+                          </p>
+                        </div>
+                      </Card>
                     </li>
                     <li>
-                      <div className="grid gap-1">
-                        <h3 className={`text-2xl font-bold ${kanit.className}`}>Powerful Organization</h3>
-                        <p className="text-muted-foreground">
-                          Easily search, filter, and sort your business cards to find the right contact.
-                        </p>
-                      </div>
+                      <Card className="p-4">
+                        <div className="grid gap-1">
+                          <h3 className={`text-2xl font-bold ${kanit.className}`}>Powerful Organization</h3>
+                          <p className="text-muted-foreground text-sm">
+                            Easily search, filter, and sort your business cards to find the right contact.
+                          </p>
+                        </div>
+                      </Card>
                     </li>
                     <li>
-                      <div className="grid gap-1">
-                        <h3 className={`text-2xl font-bold ${kanit.className}`}>Secure Storage</h3>
-                        <p className="text-muted-foreground">
-                          Keep your business cards safe and secure in our cloud-based storage.
-                        </p>
-                      </div>
+                      <Card className="p-4">
+                        <div className="grid gap-1">
+                          <h3 className={`text-2xl font-bold ${kanit.className}`}>Secure Storage</h3>
+                          <p className="text-muted-foreground text-sm">
+                            Keep your business cards safe and secure in our cloud-based storage.
+                          </p>
+                        </div>
+                      </Card>
                     </li>
                     <li>
-                      <div className="grid gap-1">
-                        <h3 className={`text-2xl font-bold ${kanit.className}`}>Easy Sharing</h3>
-                        <p className="text-muted-foreground">
-                          Share your contacts with colleagues and clients with a few clicks.
-                        </p>
-                      </div>
+                      <Card className="p-4">
+                        <div className="grid gap-1">
+                          <h3 className={`text-2xl font-bold ${kanit.className}`}>Easy Sharing</h3>
+                          <p className="text-muted-foreground text-sm">
+                            Share your contacts with colleagues and clients with a few clicks.
+                          </p>
+                        </div>
+                      </Card>
                     </li>
                   </ul>
                 </div>
@@ -217,7 +217,9 @@ export default function Page() {
                       Dedicated account management
                     </li>
                   </ul>
-                  <Button className="w-full">Contact Sales</Button>
+                  <Link href="/contact">
+                    <Button className="w-full mt-2">Contact Sales</Button>
+                  </Link>
                 </Card>
               </div>
             </div>
@@ -235,12 +237,12 @@ export default function Page() {
                     feedback.
                   </p>
                 </div>
-                <div className="flex flex-col items-start space-y-4">
-                  <form className="grid w-full gap-4">
-                    <div className="grid grid-cols-2 gap-4">
-                      <div className="grid gap-2"/>
-                    </div>
-                  </form>
+                <div className="flex items-center justify-center">
+                    <Link href="/contact">
+                      <Button>
+                        Open the contact form
+                      </Button>
+                    </Link>
                 </div>
               </div>
             </div>

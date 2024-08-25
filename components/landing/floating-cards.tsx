@@ -20,7 +20,7 @@ const SpanComponent = ({ text }:{ text: string }) => {
     const [name, title] = text.split(' - ')
     return (
         <div className="inline-flex m-4 duration-500 hover:scale-110">
-            <Card className="card w-[180px]">
+            <Card className="card w-[180px] rounded-sm">
                 <CardHeader className="text-sm pb-2 tracking-tighter font-semibold">{name} <br /><span className="text-stone-400 text-xs">{title}</span></CardHeader>
                 <CardContent className="text-xs text-stone-400">
                     <ul>
