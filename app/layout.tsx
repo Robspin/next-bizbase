@@ -4,6 +4,7 @@ import "./globals.css"
 import Link from 'next/link'
 import Image from 'next/image'
 import Navigation from '@/components/navigation'
+import { Toaster } from '@/components/ui/toaster'
 
 const inter = Inter({ subsets: ["latin"] })
 const kanit = Kanit({ weight: ['500'], subsets: ['latin'] });
@@ -29,6 +30,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       </div>
     </header>
     {children}
+    <Toaster />
     </body>
     </html>
   )

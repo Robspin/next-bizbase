@@ -64,7 +64,7 @@ export default function Page() {
             <div className="container px-4 md:px-6">
               <div className="flex flex-col items-center justify-center space-y-4 text-center">
                 <div className="space-y-2 mb-6">
-                  <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">Key Features</div>
+                  <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm text-primary">Key Features</div>
                   <h2 className={`text-3xl font-bold tracking-tight sm:text-5xl ${kanit.className}`}>
                     Organize and Secure Your Business Cards
                   </h2>
@@ -228,7 +228,7 @@ export default function Page() {
             <div className="container px-4 md:px-6">
               <div className="grid gap-10 sm:px-10 md:gap-16 md:grid-cols-2">
                 <div className="space-y-4">
-                  <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">Contact Us</div>
+                  <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm text-primary">Contact Us</div>
                   <h2 className={`lg:leading-tighter text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl xl:text-[3.4rem] 2xl:text-[3.75rem] ${kanit.className}`}>
                     Have a question? Get in touch.
                   </h2>
